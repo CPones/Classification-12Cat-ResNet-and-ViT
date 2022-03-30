@@ -227,8 +227,28 @@ class ResNet(TheseusLayer):
             x = self.flatten(x)
             x = self.fc(x)
         return x
-        
-    def ResNet152(pretrained=False, use_ssld=False, **kwargs):
+    
+    
+def ResNet50(pretrained=False, use_ssld=False, **kwargs):
+    """
+    ResNet50
+    Args:
+        pretrained: bool=False or str. If `True` load pretrained parameters, `False` otherwise.
+                    If str, means the path of the pretrained model.
+        use_ssld: bool=False. Whether using distillation pretrained model when pretrained=True.
+    Returns:
+        model: nn.Layer. Specific `ResNet50` model depends on args.
+    """
+    model = ResNet(
+        config=NET_CONFIG["50"],
+        stages_pattern=MODEL_STAGES_PATTERN["ResNet50"],
+        version="vb",
+        **kwargs)
+    _load_pretrained(pretrained, model, MODEL_URLS["ResNet50"], use_ssld)
+    return model
+
+
+def ResNet152(pretrained=False, use_ssld=False, **kwargs):
     """
     ResNet152
     Args:

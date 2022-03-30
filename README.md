@@ -115,17 +115,22 @@ dataset/
 - 总显存：16GB
 - 总内存：16GB
 - 总硬盘：100GB
-- epoch：100
+
+训练结果
+- ResNet152 ACC曲线
+<center>
+<img src='./doc_images/ResNet152_eval_acc.png' width=50%>
+</center>
+    
+- ViT_small_patch16_224 ACC曲线
+<center>
+<img src='./doc_images/ViT_eval_acc.png' width=50%>
+</center>
 
 | 模型 | Top-1 ACC | Top-5 ACC |  eta | params | score | load |
 | :--: | :-------: | :-------: | :--: | :----: | :---: | :--: |
 | ResNet152 |
 | ViT_small_patch16_224 |
-
-- ResNet152 ACC曲线
-
-
-- ViT_small_patch16_224 ACC曲线
 
 # 五、结论
 

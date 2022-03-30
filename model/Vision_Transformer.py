@@ -255,7 +255,7 @@ def ViT_small_patch16_224(pretrained=False, use_ssld=False, **kwargs):
         use_ssld=use_ssld)
     return model
   
-  def ViT_large_patch16_224(pretrained=False, use_ssld=False, **kwargs):
+def ViT_large_patch16_224(pretrained=False, use_ssld=False, **kwargs):
     model = VisionTransformer(
         patch_size=16,
         embed_dim=1024,

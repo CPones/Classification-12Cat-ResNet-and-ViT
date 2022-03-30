@@ -95,4 +95,47 @@ dataset/
     -o Global.pretrained_model=output/ViT_small_patch16_224/best_model  \
 ```
 
+# 四、结果分析
+## 4.1 ImageNet1k数据集
+所有指标的评估环境如下：
+- Arm CPU 的评估环境基于骁龙 855(SD855)。
+- Intel CPU 的评估环境基于 Intel(R) Xeon(R) Gold 6148。
+- GPU 评估环境基于 V100 机器，在 FP32+TensorRT 配置下运行 2100 次测得（去除前 100 次的 warmup 时间）。
+- FLOPs 与 Params 通过 `paddle.flops()` 计算得到（PaddlePaddle 版本为 2.2）
+
+| 模型 | Top-1 ACC | Top-5 ACC | FLOPs(G) | Params(M) | 下载链接 |
+|:--:|:--:|:--:|:--:|:--:|:--:|
+| ResNet152 | 0.7826 | 0.9396 | 11.56 | 60.34 | [预训练](https://paddle-imagenet-models-name.bj.bcebos.com/dygraph/legendary_models/ResNet152_pretrained.pdparams) |
+| ViT_small_patch16_224 | 0.7769 | 0.9342 | 9.41 | 48.60 | [预训练](https://paddle-imagenet-models-name.bj.bcebos.com/dygraph/ViT_small_patch16_224_pretrained.pdparams) |
+
+## 4.2 猫十二分类数据集
+高级GPU环境配置如下：
+- CPU：2核
+- GPU：Tesla v100
+- 总显存：16GB
+- 总内存：16GB
+- 总硬盘：100GB
+- epoch：100
+
+| 模型 | Top-1 ACC | Top-5 ACC |  eta | params | score | load |
+| :--: | :-------: | :-------: | :--: | :----: | :---: | :--: |
+| ResNet152 |
+| ViT_small_patch16_224 |
+
+- ResNet152 ACC曲线
+
+
+- ViT_small_patch16_224 ACC曲线
+
+# 五、结论
+
+
+
+
+
+
+
+
+
+
 

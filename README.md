@@ -131,10 +131,10 @@ dataset/
 | :--: | :-------: | :-------: | :--: | :----: | :---: | :--: |
 | ResNet152 | 0.94664 | 1.0000 | 0:39:10 | 223MB | 0.91250 | [best_model](https://drive.google.com/drive/folders/1BMvBTj53KoxpdhzxmFx-u3WKS6JDakq2?usp=sharing) |
 | ViT_small | 0.92575 | 1.0000 | 0:48:07 | 183MB | 0.92083 | [best_model](https://drive.google.com/drive/folders/1d9ERk7JeTMHbHD8BmJN9q6Kd74_rP05_?usp=sharing) |
-| ViT_large |  |  | 1:31:53 |
+| ViT_large | 0.94432 | 1.0000 | 1:31:53 | 1.1GB |    -    | [best_model](https://drive.google.com/drive/folders/1sBdqWqFp78CLpvv6i3BF8p7I6TYlhWSj?usp=sharing)
 
 # 五、总结
-就模型的非线性表达能力而言，ViT显然强过ResNet，这就意味着同等条件下的ViT模型，训练时间更长，训练参数更大，训练精度更高。在解决细粒度图像分类任务时，视觉注意力机制具有可观的发掘潜力，结合数据增强技术TimmAutoAugment和GridMask，在baseline基础上有希望再提升一到两个百分点。
+就模型的非线性表达能力而言，ViT显然强过ResNet，这就意味着同等条件下的ViT模型，训练时间更长，训练参数更大，训练精度更高。在解决细粒度图像分类任务时，视觉注意力机制具有可观的发掘潜力，结合数据增强技术TimmAutoAugment和GridMask，在Baseline基础上有希望再提升一到两个百分点。
 
 
 

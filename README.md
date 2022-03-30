@@ -127,10 +127,10 @@ dataset/
 <img src='./doc_images/ViT_eval_acc.png' width=50%>
 </center>
 
-| 模型 | Top-1 ACC | Top-5 ACC |  eta | params | score | load |
+| 模型 | top-1 acc | top-5 acc |  eta | params | score | load |
 | :--: | :-------: | :-------: | :--: | :----: | :---: | :--: |
-| ResNet152 |
-| ViT_small_patch16_224 |
+| ResNet152 | 0.94664 | 1.0000 | 0:39:10 | 223MB | 0.92083 | [best_model](https://drive.google.com/drive/folders/1BMvBTj53KoxpdhzxmFx-u3WKS6JDakq2?usp=sharing) |
+| ViT_small | 0.91183 | 1.0000 | 0:48:07 | 183MB | 0.92500 |  |
 
 # 五、结论
 

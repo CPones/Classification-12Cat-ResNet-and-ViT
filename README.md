@@ -129,8 +129,9 @@ dataset/
 
 | 模型 | top-1 acc | top-5 acc |  eta | params | score | load |
 | :--: | :-------: | :-------: | :--: | :----: | :---: | :--: |
-| ResNet152 | 0.94664 | 1.0000 | 0:39:10 | 223MB | 0.92083 | [best_model](https://drive.google.com/drive/folders/1BMvBTj53KoxpdhzxmFx-u3WKS6JDakq2?usp=sharing) |
-| ViT_small | 0.91183 | 1.0000 | 0:48:07 | 183MB | 0.92500 |  |
+| ResNet152 | 0.94664 | 1.0000 | 0:39:10 | 223MB | 0.91250 | [best_model](https://drive.google.com/drive/folders/1BMvBTj53KoxpdhzxmFx-u3WKS6JDakq2?usp=sharing) |
+| ViT_small | 0.92575 | 1.0000 | 0:48:07 | 183MB | 0.92083 | [best_model](https://drive.google.com/drive/folders/1d9ERk7JeTMHbHD8BmJN9q6Kd74_rP05_?usp=sharing) |
+| ViT_large |  |  | 1:31:53 |
 
 # 五、结论
 
